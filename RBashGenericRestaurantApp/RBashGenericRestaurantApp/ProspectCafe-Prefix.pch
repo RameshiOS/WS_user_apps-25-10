@@ -1,0 +1,132 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+#import "SWRevealViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
+
+#define IS_EMPTY(x) (x==nil||[x isEqualToString:@""]) // to check empty test field
+
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+// indicator values
+#define WSI_LOADING_TEXT                @"Loading"
+#define REQUEST_TIMEOUT_INTERVAL        150.0
+
+//STATUS CODE ALERT
+#define STATUS_CODE_FAILED_ERROR        @"Communication failed with server. Please try again"//after getting response if status code !=200
+
+
+#define STATUSBAR_ORIENTATION  [[UIApplication sharedApplication] statusBarOrientation]
+
+
+#define RESTAURANT_NAME                         @"Prospect Cafe & Pizzeria"
+
+//#define REQ_URL                                 @"http://test.restaurantbash.com/"
+//#define RESTAURANT_ID                           @""//test
+//#define SINGLE_RESTAURANT_ID                    @"42"
+
+#define REQ_URL                                 @"https://restaurantbash.com/"
+#define RESTAURANT_ID                           @""//live
+#define SINGLE_RESTAURANT_ID                    @"9"
+
+
+//#define REQ_URL                                 @"http://testapp.restaurantbash.com/"
+//#define RESTAURANT_ID                           @""
+//#define SINGLE_RESTAURANT_ID                    @"1"
+
+
+
+// Urls values
+
+#define SIGN_UP_REQ_URL                           @"mobileuser/signup"
+#define LOGIN_REQ_URL                             @"mobileuser/login"
+#define GET_ORDERS_LIST_REQ_URL                   @"mobileuser/onlineorder"
+#define GET_RESTAURANT_DETAILS_REQ_URL            @"menuitem/getrestaurantdetails"
+#define UPDATE_MY_PROFILE_REQ_URL                 @"mobileuser/manageaccount"
+#define GET_REST_MENU_URL                         @"mobileuser/getmenus"
+
+
+#define PLACE_ORDER_REQ_URL                       @"menuitem/payment"
+#define GET_MENU_REQ_URL                          @"menuitem/getmenus"
+#define GET_ORDER_DETAILS_REQ_URL                 @"business/customerordersview"
+#define GET_REST_TIMING_URL                       @"menuitem/resttimingservice"
+
+// For multi locations (Assumptions in app, will be chnage based on requirement)
+#define GET_RESTAURANT_LOCATION_COUNT_REQ         @"menuitem/getlocationscount"
+#define GET_RESTAURANT_LOCATIONS_REQ              @"menuitem/getlocationslist"
+
+
+
+// Url Types
+#define PLACE_ORDER_REQ_TYPE                       @"Place Order"
+#define SIGN_UP_REQ_TYPE                           @"Add Customer Details"
+#define GET_MENU_REQ_TYPE                          @"Get Menus"
+#define GET_ORDERS_LIST_REQ_TYPE                   @"Get customer online orders list"
+#define GET_ORDER_DETAILS_REQ_TYPE                 @"Get customer online order Details"
+//#define UPDATE_MY_PROFILE_REQ_TYPE                 @"Update Customer Details"
+#define UPDATE_MY_PROFILE_REQ_TYPE                 @"Manage Account"
+#define GET_REST_MENU_TYPE                         @"GET_MENU"
+#define LOGIN_REQ_TYPE                             @"Customer Login"
+#define GET_RESTAURANT_DETAILS_REQ_TYPE            @"Get Restaurant Details"
+
+#define GET_REST_TIMING_TYPE                            @"Restaurant Timings"
+
+
+// For multi locations (Assumptions in app, will be chnage based on requirement)
+#define GET_RESTAURANT_LOCATION_COUNT_REQ_TYPE     @"Get Locations Count"
+#define GET_RESTAURANT_LOCATIONS_REQ_TYPE          @"Get Locations List"
+
+
+#define FB_RESTAURANT_LINK                             @"http://prospectcafepizza.com/"
+
+#define PINTEREST_CLIENTID                         @"1443839"
+
+#define GET_RESTAURANT_DETAILS_REQ_TYPE            @"Get Restaurant Details"
+#define GET_REST_TIMING_TYPE                            @"Restaurant Timings"
+
+
+// For multi locations (Assumptions in app, will be chnage based on requirement)
+#define GET_RESTAURANT_LOCATION_COUNT_REQ_TYPE     @"Get Locations Count"
+#define GET_RESTAURANT_LOCATIONS_REQ_TYPE          @"Get Locations List"
+
+
+
+#define APP_NAME                                    @"Prospect Cafe"
+
+#define APP_HEADER_COLOR                            @"3F120F"//35782A//451206
+#define MENU_CELL_TEXT_COLOR                        @"FFFFFF"//451206
+#define LIST_COUNT_SUBVIEW_BG_COLOR                 @"CA7A27"//8E3A13//A92A0C//58100E
+#define ADD_TO_ORDER_VIEW_COLOR                     @"3F120F"//671504
+
+#define RESTAURANT_ADDRESS_COLOR                    @"35782A"
+
+#define SIDE_MENU_CELL_FONT_NAME                    @"Thonburi-bold"
+
+#define TWITTER_CONSUMER_KEY                    @"pxtXPFD2Ma7fJWnxHebbt2Etr"
+#define TWITTER_CONSUMER_SECRET                 @"qAvYbl3hXTQ3DKYkOzhiyW3kkrybUQZbmNPXmIDPhaHrT49Rjv"
+#define FB_CLIENT_TOKEN                         @"b1e51072d3d97393f239bdc66dc97882"
+
+
+#define BG_IMAGE_IPAD_LANDSCAPE                     @""
+#define BG_IMAGE_IPAD_POTRAIT                       @""
+#define BG_IMAGE_IPHONE_POTRAIT                     @""
+
+
+
+#define IS_MENU_READ_AS_ZIP_FILE                    @"1" // 1 for yes
+
+
+
+

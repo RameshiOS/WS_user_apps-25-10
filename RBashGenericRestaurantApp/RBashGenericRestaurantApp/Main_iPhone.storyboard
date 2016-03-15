@@ -1,0 +1,1869 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Rjw-rs-an1" kind="modal" identifier="SegueLoginToDashboard" id="8zq-ng-2R1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2387" y="-126"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="Eia-te-OZF">
+            <objects>
+                <viewController id="Rjw-rs-an1" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4mU-lX-hHK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ad3-yr-4ou"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OX9-S1-cLV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Wqd-jm-pIF" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="7EO-2k-G51"/>
+                        <segue destination="srq-nI-ss0" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="BlG-bV-QED"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bE-OD-Lee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1826" y="-126"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="KjD-Dr-Mfi">
+            <objects>
+                <viewController id="31J-fM-0be" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ckb-pu-zZV"/>
+                        <viewControllerLayoutGuide type="bottom" id="XwO-oh-Elg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a6x-SR-9RV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="kJN-ml-ojt" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="sI7-cC-zIG"/>
+                        <segue destination="uRd-cP-Buu" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="hqK-Ra-gow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5mb-PU-qVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="-135"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="Mgi-rf-ZVw">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wqd-jm-pIF" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fMh-pk-d4R"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jss-qN-v0H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t5K-u7-KEv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrd-CY-3GE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stb_Restaurant_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ehr-jS-0Lw">
+                                        <rect key="frame" x="0.0" y="20" width="260" height="150"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xnB-VP-bPz">
+                                <rect key="frame" x="0.0" y="171" width="325" height="397"/>
+                                <color key="backgroundColor" red="0.32549019607843138" green="0.56862745098039214" blue="0.41960784313725491" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wqd-jm-pIF" id="ibs-Eh-Au3"/>
+                                    <outlet property="delegate" destination="Wqd-jm-pIF" id="wnj-GJ-r6u"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xnB-VP-bPz" firstAttribute="leading" secondItem="t5K-u7-KEv" secondAttribute="leading" id="2ll-jI-mYA"/>
+                            <constraint firstItem="xnB-VP-bPz" firstAttribute="top" secondItem="t5K-u7-KEv" secondAttribute="top" constant="171" id="Syq-2K-WPq"/>
+                            <constraint firstAttribute="bottom" secondItem="xnB-VP-bPz" secondAttribute="bottom" id="XvT-aT-Pg2"/>
+                            <constraint firstAttribute="trailing" secondItem="xnB-VP-bPz" secondAttribute="trailing" constant="-5" id="im0-1A-Wg0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuTableView" destination="xnB-VP-bPz" id="34V-lW-yTG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rO4-I7-eHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720" y="-590"/>
+        </scene>
+        <!--Item Menu View Controller-->
+        <scene sceneID="GYY-Uk-B1c">
+            <objects>
+                <viewController storyboardIdentifier="ItemMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kJN-ml-ojt" customClass="ItemMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7A-Qv-Uj8"/>
+                        <viewControllerLayoutGuide type="bottom" id="htw-s6-XoK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DTU-V6-LWi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="109-YN-42K">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stb_Restaurant_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jsx-HS-uLH">
+                                        <rect key="frame" x="0.0" y="20" width="260" height="150"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0pM-PS-Nbt">
+                                <rect key="frame" x="0.0" y="171" width="325" height="397"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.56862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kJN-ml-ojt" id="afc-PN-ywB"/>
+                                    <outlet property="delegate" destination="kJN-ml-ojt" id="bhc-Do-QRF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0pM-PS-Nbt" secondAttribute="trailing" constant="-5" id="5zx-Jp-Jcm"/>
+                            <constraint firstItem="0pM-PS-Nbt" firstAttribute="top" secondItem="DTU-V6-LWi" secondAttribute="top" constant="171" id="R7l-LI-N5h"/>
+                            <constraint firstItem="0pM-PS-Nbt" firstAttribute="leading" secondItem="DTU-V6-LWi" secondAttribute="leading" id="dlG-ar-D7A"/>
+                            <constraint firstAttribute="bottom" secondItem="0pM-PS-Nbt" secondAttribute="bottom" id="fpD-sX-LUs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="itemMenuTableView" destination="0pM-PS-Nbt" id="JNQ-L1-1GV"/>
+                        <segue destination="Rjw-rs-an1" kind="modal" identifier="cancelSegue" id="zoO-kE-8fm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZ9-lK-Dxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="-562"/>
+        </scene>
+        <!--My Orders View Controller-->
+        <scene sceneID="atX-E8-SdD">
+            <objects>
+                <viewController storyboardIdentifier="MyOrdersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tu6-ri-syt" customClass="MyOrdersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ioB-IH-dcK"/>
+                        <viewControllerLayoutGuide type="bottom" id="JTT-eY-iRA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qcF-5J-2au">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GY6-Dy-h5b">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Orders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5A-0r-FC7">
+                                        <rect key="frame" x="60" y="20" width="200" height="40"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7C-R5-6nl">
+                                        <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                        <state key="normal" image="whiteBackBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnClicked:" destination="tu6-ri-syt" eventType="touchUpInside" id="7yI-Ry-3dv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFr-Yx-L0g">
+                                <rect key="frame" x="0.0" y="104" width="320" height="464"/>
+                            </scrollView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nak-Wa-ua8">
+                                <rect key="frame" x="24" y="68" width="272" height="29"/>
+                                <segments>
+                                    <segment title="Orders"/>
+                                    <segment title="Cancelled Orders"/>
+                                </segments>
+                                <color key="tintColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentControlValChanged:" destination="tu6-ri-syt" eventType="valueChanged" id="bYR-81-XIR"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UFr-Yx-L0g" secondAttribute="trailing" id="4mT-Sb-hw3"/>
+                            <constraint firstItem="UFr-Yx-L0g" firstAttribute="leading" secondItem="qcF-5J-2au" secondAttribute="leading" id="CO6-7R-MgV"/>
+                            <constraint firstAttribute="bottom" secondItem="UFr-Yx-L0g" secondAttribute="bottom" id="Vus-tU-a7A"/>
+                            <constraint firstItem="UFr-Yx-L0g" firstAttribute="top" secondItem="qcF-5J-2au" secondAttribute="top" constant="104" id="tOI-ub-UCj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myordersScrollView" destination="UFr-Yx-L0g" id="rBe-MS-63q"/>
+                        <outlet property="navHeaderView" destination="GY6-Dy-h5b" id="e8k-CD-T0z"/>
+                        <outlet property="segCntl" destination="Nak-Wa-ua8" id="qt7-po-43g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rW2-Cf-y5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="-1389"/>
+        </scene>
+        <!--Change Password View Controller-->
+        <scene sceneID="o0G-Dq-pfM">
+            <objects>
+                <viewController storyboardIdentifier="ChangePasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kz8-Vx-8eA" customClass="ChangePasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xXy-6X-9HA"/>
+                        <viewControllerLayoutGuide type="bottom" id="d3r-rM-GBU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ql-g8-PF9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVP-sG-lPC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hW-pk-Ckd">
+                                        <rect key="frame" x="60" y="20" width="200" height="40"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPd-Q9-rDC">
+                                        <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                        <state key="normal" image="whiteBackBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnClicked:" destination="kz8-Vx-8eA" eventType="touchUpInside" id="CrC-Jv-gxQ"/>
+                                            <action selector="backBtnClicked:" destination="2Tc-wC-fwg" eventType="touchUpInside" id="jls-Lq-G8B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjt-JD-uTR">
+                                <rect key="frame" x="0.0" y="60" width="320" height="330"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Old Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DH-m6-ixb">
+                                        <rect key="frame" x="20" y="8" width="280" height="25"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVe-Xm-5hx">
+                                        <rect key="frame" x="20" y="168" width="280" height="25"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LO9-8A-EQr">
+                                        <rect key="frame" x="20" y="88" width="280" height="25"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TEh-Mk-Q1Z">
+                                        <rect key="frame" x="20" y="41" width="280" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-HX-8eX">
+                                        <rect key="frame" x="20" y="201" width="280" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fE0-Wv-3kY">
+                                        <rect key="frame" x="20" y="121" width="280" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63c-g4-bPg">
+                                        <rect key="frame" x="167" y="263" width="125" height="35"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                        <state key="normal" title="Cancel" backgroundImage="pgm_rounded_Button_Normal.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <state key="highlighted" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <connections>
+                                            <action selector="passwordCancelBtnClicked:" destination="kz8-Vx-8eA" eventType="touchUpInside" id="X6m-yE-WUh"/>
+                                            <action selector="saveBtnClicked:" destination="2Tc-wC-fwg" eventType="touchUpInside" id="LhK-Lr-jmj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQp-QV-V7m">
+                                        <rect key="frame" x="28" y="263" width="125" height="35"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                        <state key="normal" title="Save" backgroundImage="pgm_rounded_Button_Normal.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <state key="highlighted" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <connections>
+                                            <action selector="passwordSaveBtnClicked:" destination="kz8-Vx-8eA" eventType="touchUpInside" id="Jrn-Kc-aTG"/>
+                                            <action selector="saveBtnClicked:" destination="2Tc-wC-fwg" eventType="touchUpInside" id="NRY-kG-TH9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="changePswdScrollView" destination="cjt-JD-uTR" id="0yH-hg-fhr"/>
+                        <outlet property="confirmPasswordTextField" destination="7rd-HX-8eX" id="5FO-p9-RXK"/>
+                        <outlet property="headerView" destination="bVP-sG-lPC" id="Fgi-n3-dmJ"/>
+                        <outlet property="newPasswordTextField" destination="fE0-Wv-3kY" id="Klm-Sf-Yb3"/>
+                        <outlet property="oldPasswordTextField" destination="TEh-Mk-Q1Z" id="9SO-Aa-OhX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kxo-VK-G0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1406" y="-1389"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Ckb-XF-flK">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TdF-W7-uJO" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pWP-E5-1gA"/>
+                        <viewControllerLayoutGuide type="bottom" id="qnK-hh-SqC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WxX-Np-z6X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbj-dz-8qg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G4R-b0-dg9"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MuA-3N-QGH">
+                                <rect key="frame" x="0.0" y="449" width="320" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GA-BF-9SQ">
+                                        <rect key="frame" x="11" y="6" width="301" height="29"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvJ-cP-eOx">
+                                        <rect key="frame" x="11" y="36" width="301" height="35"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                        <color key="textColor" red="0.57688958960843373" green="0.59569135918674698" blue="0.55539344879518071" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="FVw-Yb-hbJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMD-cP-B2l">
+                                <rect key="frame" x="31" y="385" width="259" height="42"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick-up Your Order ASAP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4K-zC-CWs">
+                                        <rect key="frame" x="0.0" y="12" width="259" height="24"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="19"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lI-G8-hSi">
+                                        <rect key="frame" x="0.0" y="9" width="129" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                        <state key="normal" title="Pick Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pickUpBtnClicked:" destination="TdF-W7-uJO" eventType="touchUpInside" id="ixG-4L-u3q"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pav-tv-XNh">
+                                        <rect key="frame" x="130" y="9" width="129" height="32"/>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                        <state key="normal" title="Delivery">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deliveryBtnClicked:" destination="TdF-W7-uJO" eventType="touchUpInside" id="Kqp-ht-NN2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.61908895500000005" green="0.61908895500000005" blue="0.61908895500000005" alpha="0.27000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Q2l-zv-lHK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhB-Nd-CPW">
+                                <rect key="frame" x="20" y="353" width="280" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Yug-ve-tAh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                <state key="normal" title="Order Now" backgroundImage="pgm_rounded_Button_Normal.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                <state key="highlighted" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                <connections>
+                                    <action selector="chooseItemBtn:" destination="TdF-W7-uJO" eventType="touchUpInside" id="PaV-mV-6aD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34O-TL-lFR">
+                                <rect key="frame" x="46" y="26" width="243" height="30"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="22"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stb_Home_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lBc-2Y-1zc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="166"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Lh-b9-4Jf">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Powered By RestaurantBash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfr-CZ-9jA">
+                                        <rect key="frame" x="12" y="5" width="296" height="40"/>
+                                        <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RBLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="MjV-zm-nbb">
+                                        <rect key="frame" x="260" y="5" width="50" height="45"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jA5-hl-1Q4"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stb_Restaurant_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="osc-CR-aIy">
+                                <rect key="frame" x="8" y="238" width="304" height="107"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWp-cU-nmw">
+                                <rect key="frame" x="31" y="427" width="258" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick-up Your Order " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x34-rZ-Am6" userLabel="Pick-up Your Order">
+                                        <rect key="frame" x="-15" y="0.0" width="259" height="22"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.61908895500000005" green="0.61908895500000005" blue="0.61908895500000005" alpha="0.27000000000000002" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2666666667" green="0.50588235290000005" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MuA-3N-QGH" secondAttribute="bottom" constant="44" id="Amb-7J-0nl"/>
+                            <constraint firstItem="MuA-3N-QGH" firstAttribute="leading" secondItem="WxX-Np-z6X" secondAttribute="leading" id="HOP-2Y-HJS"/>
+                            <constraint firstAttribute="trailing" secondItem="wMD-cP-B2l" secondAttribute="trailing" constant="30" id="NnJ-4R-DNE"/>
+                            <constraint firstAttribute="bottom" secondItem="wMD-cP-B2l" secondAttribute="bottom" constant="141" id="XLD-lJ-Cqv"/>
+                            <constraint firstItem="0Lh-b9-4Jf" firstAttribute="leading" secondItem="WxX-Np-z6X" secondAttribute="leading" id="ZTb-JB-cwz"/>
+                            <constraint firstItem="MhB-Nd-CPW" firstAttribute="leading" secondItem="WxX-Np-z6X" secondAttribute="leading" constant="20" id="Zgr-Eh-Lds"/>
+                            <constraint firstAttribute="trailing" secondItem="MhB-Nd-CPW" secondAttribute="trailing" constant="20" id="aqe-GK-lLP"/>
+                            <constraint firstAttribute="trailing" secondItem="MuA-3N-QGH" secondAttribute="trailing" id="bBm-mP-Kpp"/>
+                            <constraint firstAttribute="trailing" secondItem="0Lh-b9-4Jf" secondAttribute="trailing" id="e7v-g7-tc4"/>
+                            <constraint firstAttribute="bottom" secondItem="MhB-Nd-CPW" secondAttribute="bottom" constant="173" id="fmu-v9-Hj0"/>
+                            <constraint firstItem="wMD-cP-B2l" firstAttribute="leading" secondItem="WxX-Np-z6X" secondAttribute="leading" constant="31" id="l1O-KM-oWJ"/>
+                            <constraint firstAttribute="bottom" secondItem="0Lh-b9-4Jf" secondAttribute="bottom" id="utf-BC-kcj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vXz-pt-UqD">
+                        <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="RxC-fu-z4Z">
+                            <color key="tintColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="chooseItemBtn" destination="MhB-Nd-CPW" id="cb9-cy-Egz"/>
+                        <outlet property="deliveryBtn" destination="pav-tv-XNh" id="GDH-y0-8mK"/>
+                        <outlet property="orderDetailsLbl" destination="34O-TL-lFR" id="85t-VL-oJU"/>
+                        <outlet property="orderView" destination="jWp-cU-nmw" id="rtV-xi-xwT"/>
+                        <outlet property="pickUpASAPLabe" destination="x34-rZ-Am6" id="qtu-La-wSf"/>
+                        <outlet property="pickUpBtn" destination="0lI-G8-hSi" id="NUd-HM-dZ7"/>
+                        <outlet property="pickUpZeroRad" destination="B4K-zC-CWs" id="7IR-eW-YA0"/>
+                        <outlet property="pickUrOrderSubView" destination="wMD-cP-B2l" id="hu9-Xk-yTs"/>
+                        <outlet property="resLogo" destination="osc-CR-aIy" id="imE-ig-XnD"/>
+                        <outlet property="restaurantAddrLabel" destination="hvJ-cP-eOx" id="Si0-4s-PZR"/>
+                        <outlet property="restaurantName" destination="7GA-BF-9SQ" id="aqU-Cw-En4"/>
+                        <outlet property="revealButtonItem" destination="RxC-fu-z4Z" id="Nfq-3X-oSm"/>
+                        <segue destination="31J-fM-0be" kind="modal" identifier="SegueHomeToItems" id="HjK-Fa-wlJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JG7-b8-SqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="213"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KnE-St-xjq">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="srq-nI-ss0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YK0-2W-qZl">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TdF-W7-uJO" kind="relationship" relationship="rootViewController" id="3CE-A2-Kqb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLh-Kt-6et" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720" y="213"/>
+        </scene>
+        <!--Add Tip View Controller-->
+        <scene sceneID="cnS-v9-bxQ">
+            <objects>
+                <viewController storyboardIdentifier="AddTipViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6PW-2T-UnP" customClass="AddTipViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RKI-Rh-rzk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rli-FF-CiE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eMu-uX-GBM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xRx-Z3-dXh">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add A Tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVG-sB-49h">
+                                        <rect key="frame" x="0.0" y="20" width="319" height="40"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-QW-NqX">
+                                        <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                        <state key="normal" image="whiteBackBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnClicekd:" destination="15s-SY-A3V" eventType="touchUpInside" id="vBJ-86-qlp"/>
+                                            <action selector="backBtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="5vg-aU-dzX"/>
+                                            <action selector="backBtnClicked:" destination="6PW-2T-UnP" eventType="touchUpInside" id="aXj-WY-Jmr"/>
+                                            <action selector="backBtnClicked:" destination="nEZ-ul-o1I" eventType="touchUpInside" id="qSv-3D-Zsf"/>
+                                            <action selector="closeBtnClicked:" destination="lEF-MY-djc" eventType="touchUpInside" id="7Fd-b6-VJQ"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53q-WF-cX0">
+                                        <rect key="frame" x="249" y="20" width="70" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wId-Nm-hSP">
+                                <rect key="frame" x="0.0" y="59" width="160" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ab-wB-XdJ">
+                                        <rect key="frame" x="10" y="11" width="25" height="54"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uXn-aN-vQI">
+                                        <rect key="frame" x="36" y="11" width="93" height="54"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="6PW-2T-UnP" id="SZM-03-ftK"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2666666667" green="0.50588235290000005" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tvg-cD-ZzK">
+                                <rect key="frame" x="160" y="59" width="160" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aS-yf-rVb">
+                                        <rect key="frame" x="129" y="11" width="26" height="54"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tMw-gM-Owz">
+                                        <rect key="frame" x="33" y="11" width="93" height="54"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="6PW-2T-UnP" id="X9a-tR-GKj"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86666666670000003" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cT3-3O-3ax">
+                                <rect key="frame" x="134" y="81" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="6PW-2T-UnP" eventType="valueChanged" id="TNL-Hs-ULd"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJl-33-Yvj">
+                                <rect key="frame" x="18" y="154" width="60" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwp-gL-jwr">
+                                        <rect key="frame" x="5" y="9" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="22"/>
+                                        <state key="normal" title="10%">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="percentage1SubviewBtnClicked:" destination="6PW-2T-UnP" eventType="touchUpInside" id="eWj-Af-pwK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-6Z-Z62">
+                                <rect key="frame" x="91" y="154" width="60" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWS-ma-TID">
+                                        <rect key="frame" x="5" y="9" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="22"/>
+                                        <state key="normal" title="15%">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="percentage2SubviewBtnClicked:" destination="6PW-2T-UnP" eventType="touchUpInside" id="YzU-AA-kUe"/>
+                                            <action selector="qty2BtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="UOW-mw-jlA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SLa-xw-VR7">
+                                <rect key="frame" x="238" y="154" width="60" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYb-zL-dKK">
+                                        <rect key="frame" x="5" y="9" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="22"/>
+                                        <state key="normal" title="25%">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="percentage4SubviewBtnClicked:" destination="6PW-2T-UnP" eventType="touchUpInside" id="KPt-7T-MCe"/>
+                                            <action selector="qtyPlusBtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="Yll-vo-jfK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LB9-WH-0rO">
+                                <rect key="frame" x="165" y="154" width="60" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y8-pc-OUo">
+                                        <rect key="frame" x="5" y="9" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="22"/>
+                                        <state key="normal" title="20%">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="percentage3SubviewBtnClicked:" destination="6PW-2T-UnP" eventType="touchUpInside" id="8lW-Fh-Tzk"/>
+                                            <action selector="qty3BtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="rGH-bB-e7e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwF-d9-q02">
+                                <rect key="frame" x="12" y="234" width="296" height="42"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                <state key="normal" title="No tip!" backgroundImage="pgm_rounded_Button_Normal.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                <state key="highlighted" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                <connections>
+                                    <action selector="noTipBtnClicked:" destination="6PW-2T-UnP" eventType="touchUpInside" id="hgX-Gg-dzo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="dollorLabel" destination="1ab-wB-XdJ" id="tp3-1Z-6e1"/>
+                        <outlet property="headerView" destination="xRx-Z3-dXh" id="EOf-Vg-iHg"/>
+                        <outlet property="percentLabel" destination="7aS-yf-rVb" id="zz7-xO-0S3"/>
+                        <outlet property="percentage1Subview" destination="AJl-33-Yvj" id="Xj3-gf-YBI"/>
+                        <outlet property="percentage1SubviewBtn" destination="xwp-gL-jwr" id="yw0-u3-RBu"/>
+                        <outlet property="percentage2Subview" destination="TfZ-6Z-Z62" id="htj-RK-4va"/>
+                        <outlet property="percentage2SubviewBtn" destination="MWS-ma-TID" id="kCt-cQ-T0e"/>
+                        <outlet property="percentage3Subview" destination="LB9-WH-0rO" id="X4L-9U-QSQ"/>
+                        <outlet property="percentage3SubviewBtn" destination="7Y8-pc-OUo" id="gHN-83-Xt5"/>
+                        <outlet property="percentage4Subview" destination="SLa-xw-VR7" id="pjw-Or-7Tz"/>
+                        <outlet property="percentage4SubviewBtn" destination="uYb-zL-dKK" id="eOJ-cR-IdC"/>
+                        <outlet property="tipPercentageSubView" destination="Tvg-cD-ZzK" id="1in-sG-BKu"/>
+                        <outlet property="tipPercentageTextField" destination="tMw-gM-Owz" id="I0b-en-2YG"/>
+                        <outlet property="tipSelectionSwitch" destination="cT3-3O-3ax" id="znI-yK-h86"/>
+                        <outlet property="tipValueSubView" destination="wId-Nm-hSP" id="rPL-ho-uum"/>
+                        <outlet property="tipValueTextField" destination="uXn-aN-vQI" id="KhZ-rj-IHW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YmE-rN-sea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3581" y="257"/>
+        </scene>
+        <!--Place Order View Controller-->
+        <scene sceneID="O5n-0u-oo3">
+            <objects>
+                <viewController storyboardIdentifier="PlaceOrderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nEZ-ul-o1I" customClass="PlaceOrderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9mn-hy-AYj"/>
+                        <viewControllerLayoutGuide type="bottom" id="SZi-io-mvE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IK3-uA-7rw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6a-ry-tMK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Order" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBt-da-bWp">
+                                        <rect key="frame" x="0.0" y="20" width="319" height="40"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tte-eq-BqQ">
+                                        <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                        <state key="normal" image="whiteBackBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnClicked:" destination="nEZ-ul-o1I" eventType="touchUpInside" id="lMh-Ch-vTt"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hS4-Rc-tuw">
+                                        <rect key="frame" x="231" y="2" width="107" height="75"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pgm_cart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tj4-bg-ib8">
+                                                <rect key="frame" x="20" y="20" width="35" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEf-be-JIK">
+                                                <rect key="frame" x="55" y="20" width="32" height="35"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRZ-wp-o3s">
+                                <rect key="frame" x="0.0" y="60" width="320" height="385"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1FY-zP-pZD">
+                                <rect key="frame" x="0.0" y="445" width="320" height="123"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ZG-ZM-jgV">
+                                        <rect key="frame" x="0.0" y="63" width="322" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIF-gm-3M4">
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ws-DY-Rm5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="242" height="60"/>
+                                                        <color key="backgroundColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                        <state key="normal" title="Place Order">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="placeOrderBtnClicked:" destination="nEZ-ul-o1I" eventType="touchUpInside" id="UMj-Uf-erg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.73333333329999995" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73r-V0-fv7">
+                                                <rect key="frame" x="206" y="-2" width="114" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syp-aC-Sw1">
+                                                        <rect key="frame" x="38" y="0.0" width="76" height="60"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="placeOrderBtnClicked:" destination="nEZ-ul-o1I" eventType="touchUpInside" id="4xe-Tl-jYC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETe-cb-SI4">
+                                                        <rect key="frame" x="20" y="5" width="94" height="52"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IiW-Wa-dPh">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtotal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCf-er-OpQ">
+                                                <rect key="frame" x="0.0" y="6" width="106" height="21"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                                <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edg-uG-qid">
+                                                <rect key="frame" x="0.0" y="36" width="106" height="21"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlf-Xi-nLS">
+                                                <rect key="frame" x="114" y="36" width="106" height="21"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taxes &amp; Fees" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlT-Ye-pPa">
+                                                <rect key="frame" x="114" y="6" width="106" height="21"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                                <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEq-DF-m4Y">
+                                                <rect key="frame" x="249" y="1" width="66" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKZ-P4-Xnh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="62"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addTipBtnClicked:" destination="nEZ-ul-o1I" eventType="touchUpInside" id="jcZ-UB-1e8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add    Tip?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="66" translatesAutoresizingMaskIntoConstraints="NO" id="ebQ-78-X1T">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="62"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="66" translatesAutoresizingMaskIntoConstraints="NO" id="Ssr-PK-cmZ">
+                                                        <rect key="frame" x="0.0" y="8" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Tip?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="66" translatesAutoresizingMaskIntoConstraints="NO" id="uCY-bx-vsH">
+                                                        <rect key="frame" x="0.0" y="35" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pgm_plusBtn.png" translatesAutoresizingMaskIntoConstraints="NO" id="9fR-b4-5B7">
+                                                <rect key="frame" x="97" y="23" width="18" height="18"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pgm_plusBtn.png" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-fW-GwL">
+                                                <rect key="frame" x="217" y="23" width="18" height="18"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="lVN-6v-PTE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1FY-zP-pZD" secondAttribute="trailing" id="17e-FC-gwl"/>
+                            <constraint firstItem="CRZ-wp-o3s" firstAttribute="leading" secondItem="IK3-uA-7rw" secondAttribute="leading" id="28s-Ro-Tvs"/>
+                            <constraint firstItem="CRZ-wp-o3s" firstAttribute="top" secondItem="IK3-uA-7rw" secondAttribute="top" constant="60" id="Dss-DL-cg9"/>
+                            <constraint firstAttribute="trailing" secondItem="CRZ-wp-o3s" secondAttribute="trailing" id="N6Q-Ju-dMz"/>
+                            <constraint firstAttribute="bottom" secondItem="CRZ-wp-o3s" secondAttribute="bottom" constant="123" id="YQg-Lj-zSX"/>
+                            <constraint firstAttribute="bottom" secondItem="1FY-zP-pZD" secondAttribute="bottom" id="fem-94-zN2"/>
+                            <constraint firstItem="1FY-zP-pZD" firstAttribute="leading" secondItem="IK3-uA-7rw" secondAttribute="leading" id="uYr-Jc-WgO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addTipBtnView" destination="hEq-DF-m4Y" id="wfi-MD-t2M"/>
+                        <outlet property="addTipHeading" destination="Ssr-PK-cmZ" id="XZq-up-HbY"/>
+                        <outlet property="addTipPlaceHolder" destination="ebQ-78-X1T" id="0NO-d2-fzO"/>
+                        <outlet property="addTipValue" destination="uCY-bx-vsH" id="YNo-ja-MQU"/>
+                        <outlet property="cartCountLabel" destination="tEf-be-JIK" id="8wo-z1-0zO"/>
+                        <outlet property="cartSubView" destination="hS4-Rc-tuw" id="4W5-mM-NiC"/>
+                        <outlet property="headerView" destination="f6a-ry-tMK" id="G8i-m4-ALz"/>
+                        <outlet property="placeOrderCostSubView" destination="73r-V0-fv7" id="lcK-Nr-5bC"/>
+                        <outlet property="placeOrderHeadingBtn" destination="8Ws-DY-Rm5" id="6ay-I9-Rmo"/>
+                        <outlet property="placeOrderScrolView" destination="CRZ-wp-o3s" id="lGV-EF-Hpr"/>
+                        <outlet property="placeOrderSubView" destination="fIF-gm-3M4" id="dZR-Nn-iYA"/>
+                        <outlet property="placeOrderValueBtn" destination="Syp-aC-Sw1" id="YAw-6c-mcQ"/>
+                        <outlet property="subTotalTaxLabel" destination="hlf-Xi-nLS" id="Khk-6h-GRr"/>
+                        <outlet property="subtotalValLabel" destination="Edg-uG-qid" id="4ml-LP-0hO"/>
+                        <outlet property="tipBtn" destination="YKZ-P4-Xnh" id="ND8-hr-zD5"/>
+                        <outlet property="totalOrderCostLabel" destination="ETe-cb-SI4" id="6Md-Ms-VbQ"/>
+                        <segue destination="31J-fM-0be" kind="modal" identifier="PlaceOrderToCustomTable" id="IDT-yM-Y75"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVT-sA-o71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3002" y="288"/>
+        </scene>
+        <!--Dish Details View Controller-->
+        <scene sceneID="sAd-P6-2qg">
+            <objects>
+                <viewController storyboardIdentifier="DishDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1fc-AY-ynD" customClass="DishDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EMY-RH-0Um"/>
+                        <viewControllerLayoutGuide type="bottom" id="jeH-BH-162"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ugx-gf-HKd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="284-xx-I2e">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dish Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f6-VI-sPr">
+                                        <rect key="frame" x="60" y="20" width="200" height="40"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwa-Wg-cgl">
+                                        <rect key="frame" x="249" y="20" width="70" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znf-aZ-9aJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cartBtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="G9d-rd-jrK"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pgm_cart.png" translatesAutoresizingMaskIntoConstraints="NO" id="9HW-23-5za">
+                                                <rect key="frame" x="0.0" y="2" width="35" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5t-d1-BcJ">
+                                                <rect key="frame" x="37" y="2" width="32" height="35"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1by-81-rTT">
+                                        <rect key="frame" x="8" y="20" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="IqQ-fz-7bF"/>
+                                            <constraint firstAttribute="width" constant="40" id="Yah-4k-xPV"/>
+                                        </constraints>
+                                        <state key="normal" image="whiteBackBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnClicekd:" destination="15s-SY-A3V" eventType="touchUpInside" id="dYX-5o-8Q0"/>
+                                            <action selector="backBtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="qPc-Kt-VvU"/>
+                                            <action selector="closeBtnClicked:" destination="lEF-MY-djc" eventType="touchUpInside" id="l1O-uA-S5U"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NPc-YQ-1gW"/>
+                                    <constraint firstItem="1by-81-rTT" firstAttribute="top" secondItem="284-xx-I2e" secondAttribute="top" constant="20" id="dUN-cB-jUE"/>
+                                    <constraint firstItem="1by-81-rTT" firstAttribute="leading" secondItem="284-xx-I2e" secondAttribute="leading" constant="8" id="tf8-00-P7X"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adn-q8-wMO">
+                                <rect key="frame" x="0.0" y="60" width="320" height="448"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-Bj-fbx">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bgButtonClick:" destination="1fc-AY-ynD" eventType="touchUpInside" id="Ect-SL-Xwk"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="219" translatesAutoresizingMaskIntoConstraints="NO" id="VP3-LR-rfU">
+                                        <rect key="frame" x="8" y="0.0" width="219" height="48"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGy-Fo-GgG">
+                                        <rect key="frame" x="232" y="4" width="80" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ja-du-yht">
+                                                <rect key="frame" x="4" y="7" width="72" height="30"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="------Quantity &amp; Size ------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdR-q4-AUk">
+                                        <rect key="frame" x="20" y="130" width="280" height="27"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-oF-9SD">
+                                        <rect key="frame" x="20" y="168" width="60" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncB-Ku-2b8">
+                                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="26"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="qty1BtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="lgi-x6-MjQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9s7-OB-OBy">
+                                        <rect key="frame" x="93" y="168" width="60" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDv-Bg-fMy">
+                                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="26"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="qty2BtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="S26-ih-xAV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hP1-4D-Oq2">
+                                        <rect key="frame" x="167" y="168" width="60" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4La-mS-CFY">
+                                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="26"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="qty3BtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="SHn-tD-XPn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s46-Ft-QuJ">
+                                        <rect key="frame" x="240" y="168" width="60" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6S-5k-nRI">
+                                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                                <state key="normal" image="pgm_plusBtn.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="qtyPlusBtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="OKI-yT-6fs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="------ Options &amp; Sides ------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V53-qQ-Tw7">
+                                        <rect key="frame" x="20" y="286" width="280" height="27"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTL-ZY-XTC">
+                                        <rect key="frame" x="12" y="238" width="296" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsX-5W-5XB">
+                                                <rect key="frame" x="0.0" y="0.0" width="296" height="40"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sizeBtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="nsi-M9-ZsF"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pgm_downArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="KAJ-4g-BrY">
+                                                <rect key="frame" x="254" y="7" width="25" height="25"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bom-vt-XuE">
+                                        <rect key="frame" x="8" y="48" width="300" height="74"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACU-2f-vBz">
+                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGQ-Mf-xZq">
+                                        <rect key="frame" x="0.0" y="0.0" width="242" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khT-3D-Qtk">
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                <state key="normal" title="Add To Order">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addToOrderBtnClicked:" destination="1fc-AY-ynD" eventType="touchUpInside" id="OkY-Jq-9Hh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhB-OU-bAu">
+                                        <rect key="frame" x="206" y="-2" width="114" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMJ-xx-N1o">
+                                                <rect key="frame" x="38" y="0.0" width="76" height="60"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uf8-8v-heU">
+                                                <rect key="frame" x="20" y="5" width="94" height="52"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hLm-Aq-um1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="284-xx-I2e" secondAttribute="trailing" id="AvG-KQ-4qc"/>
+                            <constraint firstItem="Adn-q8-wMO" firstAttribute="leading" secondItem="Ugx-gf-HKd" secondAttribute="leading" id="HYD-qH-iFb"/>
+                            <constraint firstAttribute="trailing" secondItem="ACU-2f-vBz" secondAttribute="trailing" id="Rwi-Qk-hyE"/>
+                            <constraint firstItem="Adn-q8-wMO" firstAttribute="top" secondItem="Ugx-gf-HKd" secondAttribute="top" constant="60" id="ZZm-8a-jIO"/>
+                            <constraint firstItem="284-xx-I2e" firstAttribute="leading" secondItem="Ugx-gf-HKd" secondAttribute="leading" id="gss-Ix-hA0"/>
+                            <constraint firstAttribute="bottom" secondItem="Adn-q8-wMO" secondAttribute="bottom" constant="60" id="hU2-r9-H4o"/>
+                            <constraint firstAttribute="trailing" secondItem="Adn-q8-wMO" secondAttribute="trailing" id="ku2-zf-czs"/>
+                            <constraint firstItem="ACU-2f-vBz" firstAttribute="leading" secondItem="Ugx-gf-HKd" secondAttribute="leading" id="mCU-Zm-AEe"/>
+                            <constraint firstAttribute="bottom" secondItem="ACU-2f-vBz" secondAttribute="bottom" id="xHH-yn-D1Y"/>
+                            <constraint firstItem="284-xx-I2e" firstAttribute="top" secondItem="Ugx-gf-HKd" secondAttribute="top" id="yAd-B3-xFH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addToOrderBtn" destination="khT-3D-Qtk" id="vPB-ad-7sz"/>
+                        <outlet property="addToOrderCostBtn" destination="vMJ-xx-N1o" id="cY5-YW-Xfy"/>
+                        <outlet property="addToOrderCostLabel" destination="Uf8-8v-heU" id="nc3-Hs-eLD"/>
+                        <outlet property="addToOrderCostSubView" destination="yhB-OU-bAu" id="HD0-DX-pzq"/>
+                        <outlet property="addToOrderSubView" destination="aGQ-Mf-xZq" id="dmQ-LW-0tI"/>
+                        <outlet property="cartCountLabel" destination="p5t-d1-BcJ" id="DP7-wY-Fby"/>
+                        <outlet property="dishDeteailsScrollview" destination="Adn-q8-wMO" id="Z2Y-Jt-B8l"/>
+                        <outlet property="headerView" destination="284-xx-I2e" id="XT6-Bh-LaP"/>
+                        <outlet property="itemCost" destination="3ja-du-yht" id="Bgg-4v-gTB"/>
+                        <outlet property="itemCostSubView" destination="lGy-Fo-GgG" id="792-Nt-dEB"/>
+                        <outlet property="itemDescTextView" destination="bom-vt-XuE" id="ExM-qC-JDC"/>
+                        <outlet property="itemName" destination="VP3-LR-rfU" id="OFN-7T-xYV"/>
+                        <outlet property="qty1Btn" destination="ncB-Ku-2b8" id="c2L-9F-fmo"/>
+                        <outlet property="qty1BtnSubView" destination="F7A-oF-9SD" id="OV5-09-RSq"/>
+                        <outlet property="qty2Btn" destination="bDv-Bg-fMy" id="gM7-P6-0Nu"/>
+                        <outlet property="qty2BtnSubView" destination="9s7-OB-OBy" id="1KM-47-P6I"/>
+                        <outlet property="qty3Btn" destination="4La-mS-CFY" id="mX5-8O-uRH"/>
+                        <outlet property="qty3BtnSubView" destination="hP1-4D-Oq2" id="qba-t6-t68"/>
+                        <outlet property="qtyPlusBtn" destination="p6S-5k-nRI" id="KlQ-ob-lTL"/>
+                        <outlet property="qtyPlusBtnSubView" destination="s46-Ft-QuJ" id="tJg-l9-qwb"/>
+                        <outlet property="sizeBtn" destination="KsX-5W-5XB" id="1xm-cW-ehw"/>
+                        <outlet property="sizeBtnSubView" destination="HTL-ZY-XTC" id="xNH-f9-MTB"/>
+                        <segue destination="31J-fM-0be" kind="modal" identifier="DishToCustumTable" id="Ys4-RB-UhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WpW-jx-ZRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2485" y="276"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="w5O-9B-oOy">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lEF-MY-djc" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uee-8o-zSJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OMe-xs-KqG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dXV-PW-8rd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8UJ-ai-eiV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aMx-mq-khv">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sph-HC-YjV">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stb_Restaurant_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="4GH-QL-ot9">
+                                                        <rect key="frame" x="48" y="20" width="230" height="140"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACs-8f-ote">
+                                                        <rect key="frame" x="0.0" y="17" width="100" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuf-dq-OPC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="tintColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" backgroundImage="stb_BackBtn.png">
+                                                                    <color key="titleColor" red="0.27058823529999998" green="0.070588235289999995" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="closeBtnClicked:" destination="lEF-MY-djc" eventType="touchUpInside" id="zQ9-4Q-MC9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6v-Hm-VRk">
+                                                                <rect key="frame" x="33" y="0.0" width="50" height="40"/>
+                                                                <color key="tintColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" title="Back">
+                                                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="closeBtnClicked:" destination="lEF-MY-djc" eventType="touchUpInside" id="mZL-U8-XSh"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e2J-gk-lOp">
+                                                <rect key="frame" x="20" y="205" width="280" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="lEF-MY-djc" id="NAr-W7-gha"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ia2-mg-EB0">
+                                                <rect key="frame" x="20" y="257" width="280" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="lEF-MY-djc" id="82E-uH-Ir0"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyH-UL-cly">
+                                                <rect key="frame" x="20" y="305" width="280" height="37"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="21"/>
+                                                <state key="normal" title="Login To Your Account" backgroundImage="pgm_rounded_Button_Normal.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                                <state key="highlighted" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                                <connections>
+                                                    <action selector="loginBtnClicked:" destination="lEF-MY-djc" eventType="touchUpInside" id="a8K-g4-Kfl"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Account ?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd5-Vr-6Zg">
+                                                <rect key="frame" x="20" y="358" width="134" height="30"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glB-xf-KdS">
+                                                <rect key="frame" x="157" y="358" width="143" height="30"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                                <state key="normal" title="Sign-Up Now">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signUpBtnClicked:" destination="lEF-MY-djc" eventType="touchUpInside" id="8DT-n8-Ty5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.32549019610000002" green="0.56862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
+                                    </scrollView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="e6v-Hm-VRk" id="b6F-N3-p87"/>
+                        <outlet property="closeBtn" destination="Cuf-dq-OPC" id="BQq-Y7-QXm"/>
+                        <outlet property="loginScrollView" destination="aMx-mq-khv" id="Mje-bf-aBA"/>
+                        <outlet property="passwordTextField" destination="Ia2-mg-EB0" id="dn9-H4-IAB"/>
+                        <outlet property="signUpNowBtn" destination="glB-xf-KdS" id="waw-kj-dma"/>
+                        <outlet property="userNameTextField" destination="e2J-gk-lOp" id="KQt-8n-0Jg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97h-Mp-5Bq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-760" y="-1549"/>
+        </scene>
+        <!--My Profile View Controller-->
+        <scene sceneID="weR-DX-xVQ">
+            <objects>
+                <viewController storyboardIdentifier="MyProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Tc-wC-fwg" customClass="MyProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XAY-48-dyN"/>
+                        <viewControllerLayoutGuide type="bottom" id="SVn-sx-yJN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Br4-Nu-20H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ce5-y2-jXn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuj-UN-ft4">
+                                        <rect key="frame" x="60" y="20" width="200" height="40"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sls-mu-t7U">
+                                        <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                        <state key="normal" image="whiteBackBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnClicked:" destination="2Tc-wC-fwg" eventType="touchUpInside" id="T5M-ol-7ga"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1T-mA-uoz">
+                                <rect key="frame" x="0.0" y="60" width="320" height="415"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIv-kj-KMv">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keyBoardResignBtnClicked:" destination="2Tc-wC-fwg" eventType="touchUpInside" id="Aa3-RS-pXq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPr-Pe-fZL">
+                                        <rect key="frame" x="20" y="7" width="280" height="25"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaI-Gf-hOt">
+                                        <rect key="frame" x="20" y="163" width="280" height="25"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIf-ts-crQ">
+                                        <rect key="frame" x="20" y="85" width="280" height="25"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRH-gJ-cO9">
+                                        <rect key="frame" x="20" y="241" width="280" height="25"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eQc-1J-oXN">
+                                        <rect key="frame" x="20" y="38" width="280" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Tc-wC-fwg" id="mu5-LE-BmN"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Llc-W7-Adn">
+                                        <rect key="frame" x="20" y="194" width="280" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Tc-wC-fwg" id="zum-Kd-aZZ"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fi0-fT-VJJ">
+                                        <rect key="frame" x="20" y="116" width="280" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Tc-wC-fwg" id="Nbg-2I-UVe"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV4-T7-2W4">
+                                        <rect key="frame" x="9" y="350" width="148" height="35"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                        <state key="normal" title="Change Password" backgroundImage="pgm_rounded_Button_Normal.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <state key="highlighted" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <connections>
+                                            <action selector="changePswdBtnClicked:" destination="2Tc-wC-fwg" eventType="touchUpInside" id="JBC-Xl-q6a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1U-ZI-4JA">
+                                        <rect key="frame" x="163" y="350" width="148" height="35"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                        <state key="normal" title="Save" backgroundImage="pgm_rounded_Button_Normal.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <state key="highlighted" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <connections>
+                                            <action selector="saveBtnClicked:" destination="2Tc-wC-fwg" eventType="touchUpInside" id="6OZ-HH-YaW"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I90-1q-GrK">
+                                        <rect key="frame" x="20" y="272" width="280" height="70"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Tc-wC-fwg" id="fSd-XE-cr9"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="P0q-2j-c3t"/>
+                                    <constraint firstAttribute="height" constant="415" id="vEs-kk-1Td"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d1T-mA-uoz" firstAttribute="leading" secondItem="Br4-Nu-20H" secondAttribute="leading" id="2YE-DA-FOV"/>
+                            <constraint firstAttribute="trailing" secondItem="d1T-mA-uoz" secondAttribute="trailing" id="ASJ-ga-xc0"/>
+                            <constraint firstItem="d1T-mA-uoz" firstAttribute="top" secondItem="Br4-Nu-20H" secondAttribute="top" constant="60" id="vRG-9S-oCB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="I90-1q-GrK" id="0ir-Aa-H9c"/>
+                        <outlet property="emailTextField" destination="Llc-W7-Adn" id="Dc3-Uv-UfI"/>
+                        <outlet property="firstNameTextField" destination="eQc-1J-oXN" id="PJz-my-GWT"/>
+                        <outlet property="headerView" destination="ce5-y2-jXn" id="rrZ-59-8Tg"/>
+                        <outlet property="mobileTextField" destination="Fi0-fT-VJJ" id="vqq-g5-LqG"/>
+                        <outlet property="myProfileScrollView" destination="d1T-mA-uoz" id="OTa-M2-AnR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6r-1a-pnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="-1389"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="e68-f2-3io">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="15s-SY-A3V" customClass="SignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bSQ-11-kIG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lma-FF-GRw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CA9-SE-qpe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="85e-TW-UTe">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="575"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Xi-cN-w84">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stb_Restaurant_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="rQe-5z-i3w">
+                                                <rect key="frame" x="48" y="20" width="230" height="140"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd8-TJ-rtj">
+                                                <rect key="frame" x="1" y="17" width="40" height="40"/>
+                                                <color key="tintColor" red="0.58924498179999996" green="0.38840100360000002" blue="0.16648608579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="stb_BackBtn.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="backBtnClicekd:" destination="15s-SY-A3V" eventType="touchUpInside" id="NV2-dr-6MO"/>
+                                                    <action selector="closeBtnClicked:" destination="lEF-MY-djc" eventType="touchUpInside" id="Wza-Ig-ks8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWS-hb-K8m">
+                                        <rect key="frame" x="20" y="470" width="280" height="37"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="21"/>
+                                        <state key="normal" title="Submit &amp; Register" backgroundImage="pgm_rounded_Button_Normal.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <state key="highlighted" backgroundImage="pgm_rounded_Button_Active.png"/>
+                                        <connections>
+                                            <action selector="submitBtnClicked:" destination="15s-SY-A3V" eventType="touchUpInside" id="yWa-0E-hNF"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdk-Pm-8Pi">
+                                        <rect key="frame" x="20" y="165" width="280" height="297"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="First and Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9ax-fx-QPF">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="15s-SY-A3V" id="z2G-72-p1u"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="V5O-pV-gPB">
+                                                <rect key="frame" x="0.0" y="49" width="280" height="50"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="15s-SY-A3V" id="V7e-6d-abA"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dHX-GT-z0n">
+                                                <rect key="frame" x="0.0" y="147" width="280" height="50"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="15s-SY-A3V" id="Afm-wR-Ls5"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Mobile" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ynl-RT-jdE">
+                                                <rect key="frame" x="0.0" y="98" width="280" height="50"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="15s-SY-A3V" id="aqP-QT-obn"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Confirm Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lFN-Q1-5kj">
+                                                <rect key="frame" x="0.0" y="196" width="280" height="50"/>
+                                                <color key="textColor" red="0.90097064393939397" green="0.51768465909090911" blue="0.85675899621212126" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="15s-SY-A3V" id="5SW-tj-FB0"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Zip" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dld-e3-Ud7">
+                                                <rect key="frame" x="0.0" y="245" width="280" height="50"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="15s-SY-A3V" id="QeR-ev-Tbi"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.56862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="lFN-Q1-5kj" id="dPu-rw-Cfj"/>
+                        <outlet property="emailTextField" destination="V5O-pV-gPB" id="jfd-ft-33p"/>
+                        <outlet property="firstNameTextField" destination="9ax-fx-QPF" id="QUa-pm-Znb"/>
+                        <outlet property="mobileTextField" destination="Ynl-RT-jdE" id="Upe-n5-peI"/>
+                        <outlet property="passwordTextField" destination="dHX-GT-z0n" id="ubZ-Eh-3x0"/>
+                        <outlet property="signUpScrollView" destination="85e-TW-UTe" id="p7P-7a-mC8"/>
+                        <outlet property="zipCodeTextField" destination="dld-e3-Ud7" id="whn-fz-KX8"/>
+                        <segue destination="Rjw-rs-an1" kind="modal" identifier="SignUpToHome" id="jKu-Ld-atT"/>
+                        <segue destination="31J-fM-0be" kind="modal" identifier="SignUpToItemMenu" id="TeH-iw-qVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxa-S2-ZNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="-1413"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="7Oa-ph-Pux">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1tm-Ts-aNs" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="usR-fP-D00"/>
+                        <viewControllerLayoutGuide type="bottom" id="So4-6j-zJb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MaS-Ju-jxk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9yM-F0-Ie1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tE-Wh-Poy">
+                                <rect key="frame" x="3" y="11" width="40" height="40"/>
+                                <color key="tintColor" red="0.58924498179999996" green="0.38840100360000002" blue="0.16648608579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="stb_BackBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnClicked:" destination="1tm-Ts-aNs" eventType="touchUpInside" id="G47-yu-Khg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account &amp; Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="kRU-ng-HaC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SMW-z1-kOK">
+                                <rect key="frame" x="0.0" y="61" width="325" height="507"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="SettingsCustomTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCustomTableViewCell" rowHeight="60" id="ebJ-5o-K56" customClass="SettingsCustomTableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="325" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ebJ-5o-K56" id="Gfv-in-nb1">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-wE-hGX">
+                                                    <rect key="frame" x="10" y="17" width="25" height="25"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrb-UB-rJm">
+                                                    <rect key="frame" x="43" y="10" width="212" height="40"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                    <color key="textColor" red="0.2666666667" green="0.50588235290000005" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QY8-Z7-gkY">
+                                                    <rect key="frame" x="265" y="11" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="cellIcon" destination="WLb-wE-hGX" id="PZP-KM-0LP"/>
+                                            <outlet property="cellSwitch" destination="QY8-Z7-gkY" id="1lm-pu-RKw"/>
+                                            <outlet property="settingName" destination="Rrb-UB-rJm" id="uZb-e1-FS3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1tm-Ts-aNs" id="8I7-of-aDs"/>
+                                    <outlet property="delegate" destination="1tm-Ts-aNs" id="4rA-hp-PJJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="acc_settingsLbl" destination="kRU-ng-HaC" id="6B2-jq-d38"/>
+                        <outlet property="settingsTableView" destination="SMW-z1-kOK" id="CC6-wI-Lg3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqd-Vu-ExY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="-1397"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SgM-va-XOB">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="uRd-cP-Buu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4HT-qL-mFI">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RaL-ph-Nq0" kind="relationship" relationship="rootViewController" id="UIw-Hk-s0t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66L-KY-uXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1426" y="281"/>
+        </scene>
+        <!--Example Table View Controller-->
+        <scene sceneID="zTv-NL-Ltx">
+            <objects>
+                <tableViewController storyboardIdentifier="SRExampleTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RaL-ph-Nq0" customClass="SRExampleTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="22" sectionFooterHeight="22" id="ufc-uj-ZoM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.8666666666666667" alpha="1" colorSpace="deviceRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChooseItemCustomTableViewCell" rowHeight="81" id="0ch-nT-wH7" customClass="ChooseItemCustomTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ch-nT-wH7" id="dz0-kI-fVU">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="8a3-lq-KAr">
+                                            <rect key="frame" x="8" y="8" width="225" height="44"/>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sb5-Ez-c5I">
+                                            <rect key="frame" x="236" y="8" width="80" height="44"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7e-d0-093">
+                                                    <rect key="frame" x="7" y="5" width="72" height="33"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="itemCostLabel" destination="w7e-d0-093" id="Lk0-WR-XAz"/>
+                                    <outlet property="itemCostSubView" destination="sb5-Ez-c5I" id="4w6-kw-wnw"/>
+                                    <outlet property="itemNameLabel" destination="8a3-lq-KAr" id="mdO-bj-8o4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="g7h-Jh-k4S">
+                        <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="3u0-AD-UXn">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="revealButtonItem" destination="3u0-AD-UXn" id="Gsr-U5-KFO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s3V-f3-0FT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060" y="276"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="3yz-Zc-Pta">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M4e-KF-AOb" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JfW-am-soZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q64-fc-l1n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kkK-fb-2J7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FD3-Hm-HXC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLm-eW-gof">
+                                        <rect key="frame" x="0.0" y="10" width="40" height="40"/>
+                                        <state key="normal" image="whiteBackBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnClicked:" destination="M4e-KF-AOb" eventType="touchUpInside" id="8Ab-ac-Z7o"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE4-9u-GHb">
+                                        <rect key="frame" x="47" y="10" width="227" height="40"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1058823529" green="0.2156862745" blue="0.27125946969999998" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lw-BW-zjQ">
+                                <rect key="frame" x="0.0" y="49" width="320" height="519"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5lw-BW-zjQ" secondAttribute="bottom" id="NYJ-US-lPQ"/>
+                            <constraint firstItem="5lw-BW-zjQ" firstAttribute="leading" secondItem="kkK-fb-2J7" secondAttribute="leading" id="NYz-9g-VcO"/>
+                            <constraint firstItem="5lw-BW-zjQ" firstAttribute="top" secondItem="kkK-fb-2J7" secondAttribute="top" constant="49" id="NkM-JB-6in"/>
+                            <constraint firstAttribute="trailing" secondItem="5lw-BW-zjQ" secondAttribute="trailing" id="gWg-ZT-m29"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerView" destination="FD3-Hm-HXC" id="laO-pQ-NNI"/>
+                        <outlet property="headingLabel" destination="uE4-9u-GHb" id="aJG-yK-3lR"/>
+                        <outlet property="webPageView" destination="5lw-BW-zjQ" id="Gfr-RE-GJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MeE-qz-MDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2282" y="-843"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RBLogo.png" width="120" height="120"/>
+        <image name="pgm_cart.png" width="127" height="127"/>
+        <image name="pgm_downArrow.png" width="86" height="86"/>
+        <image name="pgm_plusBtn.png" width="128" height="128"/>
+        <image name="pgm_rounded_Button_Active.png" width="480" height="104"/>
+        <image name="pgm_rounded_Button_Normal.png" width="480" height="104"/>
+        <image name="reveal-icon.png" width="22" height="17"/>
+        <image name="stb_BackBtn.png" width="128" height="128"/>
+        <image name="stb_Home_1.png" width="961" height="481"/>
+        <image name="stb_Restaurant_Logo.png" width="926" height="120"/>
+        <image name="whiteBackBtn.png" width="128" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="jKu-Ld-atT"/>
+        <segue reference="Ys4-RB-UhM"/>
+    </inferredMetricsTieBreakers>
+</document>

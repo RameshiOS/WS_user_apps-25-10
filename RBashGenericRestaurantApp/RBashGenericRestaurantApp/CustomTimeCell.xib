@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CustomTimeCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTimeCell" id="KGk-i7-Jjw" customClass="CustomTimeCell">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeO-x9-l4V">
+                        <rect key="frame" x="8" y="0.0" width="65" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular" fixedFrame="YES">
+                            <rect key="frame" x="5" y="2" width="57" height="60"/>
+                        </variation>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pick or del day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u22-fT-dbb">
+                        <rect key="frame" x="8" y="0.0" width="65" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular" fixedFrame="YES">
+                            <rect key="frame" x="5" y="2" width="90" height="44"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:00 A.M to 12:00 P.M  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ruc-s9-F35">
+                        <rect key="frame" x="102" y="0.0" width="98" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular" fixedFrame="YES">
+                            <rect key="frame" x="70" y="2" width="100" height="60"/>
+                        </variation>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pick or deli time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqj-Nk-Fvd">
+                        <rect key="frame" x="102" y="0.0" width="98" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular" fixedFrame="YES">
+                            <rect key="frame" x="100" y="2" width="200" height="44"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="02:00 A.M to 02:00 P.M  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic6-sO-XoL">
+                        <rect key="frame" x="224" y="0.0" width="106" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular" fixedFrame="YES">
+                            <rect key="frame" x="184" y="2" width="100" height="60"/>
+                        </variation>
+                    </label>
+                </subviews>
+                <variation key="heightClass=regular">
+                    <mask key="subviews">
+                        <include reference="u22-fT-dbb"/>
+                        <include reference="xqj-Nk-Fvd"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dayLabel" destination="UeO-x9-l4V" id="c7p-jm-Amg"/>
+                <outlet property="daysOneTimeLabel" destination="u22-fT-dbb" id="ST0-yP-4wD"/>
+                <outlet property="deliveryFromTimeLabel" destination="ic6-sO-XoL" id="BPF-ga-4z7"/>
+                <outlet property="pickOrDeliveryTimeLabel" destination="xqj-Nk-Fvd" id="3ez-3D-6Kh"/>
+                <outlet property="pickupFromTimeLabel" destination="Ruc-s9-F35" id="mZu-KH-ZNA"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="256"/>
+        </tableViewCell>
+    </objects>
+</document>

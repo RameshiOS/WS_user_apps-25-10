@@ -1,0 +1,87 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+#import "SWRevealViewController.h"
+
+#define IS_EMPTY(x) (x==nil||[x isEqualToString:@""]) // to check empty test field
+
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+// indicator values
+#define WSI_LOADING_TEXT                @"Loading"
+#define REQUEST_TIMEOUT_INTERVAL        150.0
+
+//STATUS CODE ALERT
+#define STATUS_CODE_FAILED_ERROR        @"Communication failed with server. Please try again"//after getting response if status code !=200
+
+
+#define STATUSBAR_ORIENTATION  [[UIApplication sharedApplication] statusBarOrientation]
+
+
+#define REQ_URL                                 @"http://test.restaurantbash.com/"
+//#define REQ_URL                                 @"https://restaurantbash.com/"
+
+// Urls values
+
+#define SIGN_UP_REQ_URL                           @"mobileuser/signup"
+#define LOGIN_REQ_URL                             @"mobileuser/login"
+#define GET_ORDERS_LIST_REQ_URL                   @"mobileuser/onlineorder"
+#define UPDATE_MY_PROFILE_REQ_URL                 @"mobileuser/manageaccount"
+#define GET_REST_MENU_URL                             @"mobileuser/getmenus"
+
+
+#define PLACE_ORDER_REQ_URL                       @"menuitem/payment"
+//#define SIGN_UP_REQ_URL                           @"menuitem/addcustomer"
+#define GET_MENU_REQ_URL                          @"menuitem/getmenus"
+//#define GET_ORDERS_LIST_REQ_URL                   @"business/onlinecustomerorders"
+#define GET_ORDER_DETAILS_REQ_URL                 @"business/customerordersview"
+//#define UPDATE_MY_PROFILE_REQ_URL                 @"menuitem/updatecustomer"
+//#define LOGIN_REQ_URL                             @"menuitem/customerlogin"
+
+#define GET_RESTAURANT_DETAILS_REQ_URL            @"menuitem/getrestaurantdetails"
+
+// Url Types
+#define PLACE_ORDER_REQ_TYPE                       @"Place Order"
+#define SIGN_UP_REQ_TYPE                           @"Add Customer Details"
+#define GET_MENU_REQ_TYPE                          @"Get Menus"
+#define GET_ORDERS_LIST_REQ_TYPE                   @"Get customer online orders list"
+#define GET_ORDER_DETAILS_REQ_TYPE                 @"Get customer online order Details"
+//#define UPDATE_MY_PROFILE_REQ_TYPE                 @"Update Customer Details"
+#define UPDATE_MY_PROFILE_REQ_TYPE                 @"Manage Account"
+#define GET_REST_MENU_TYPE                             @"GET_MENU"
+#define LOGIN_REQ_TYPE                             @"Customer Login"
+
+#define GET_RESTAURANT_DETAILS_REQ_TYPE            @"Get Restaurant Details"
+
+
+
+
+#define APP_NAME                                    @"Mario'sPizza"
+#define RESTAURANT_NAME                             @"Marrio's Pizza"
+#define RESTAURANT_ADDRESS                          @"92 Middlesex RD, Tyngsboro, MA 01879"
+
+#define APP_HEADER_COLOR                            @"992d2d"
+#define MENU_CELL_TEXT_COLOR                        @"ffffff"
+#define LIST_COUNT_SUBVIEW_BG_COLOR                 @"448158"
+#define ADD_TO_ORDER_VIEW_COLOR                     @"992d2d"
+
+
+#define SIDE_MENU_CELL_FONT_NAME                    @"Thonburi-bold"
+
+
+
+
+
+
